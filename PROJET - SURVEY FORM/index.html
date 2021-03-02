@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>PROJECT - SURVEY FORM</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1 id="title">Survey Challenge - Azed WD</h1>
+    <p id="description"><em>Here's my try for the survey challenge for FreeCodeCamp</em></p>
+  </header>
+
+  <div class="container">
+    <form id="survey-form">
+
+      <div class="form-group1">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" class="inputs" type="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group1">
+        <label id="email-label" for="email">Email</label>
+        <input id="email" class="inputs" type="email" name="email" placeholder="Enter your e-mail" required>
+      </div>
+
+      <div class="form-group1">
+        <label id="number-label" for="number">Age (optional)</label>
+        <input id="number" class="inputs" type="number" name="number" placeholder="Enter your age" min="12" max="99">
+      </div>
+
+      <div class="form-group1">
+        <label for="dropdown">How do you find this survey form ?</label>
+        <select id="dropdown" class="inputs" name="dropdown">
+          <option selected value="wonderful">Wonderful</option>
+          <option value="correct">Correct</option>
+          <option value="mediocre">Mediocre</option>
+          <option value="bad">Bad</option>
+        </select>
+      </div>
+
+      <div class="form-group1">
+        <p class="form-group1">Are you going to check my Portefolio ?</p>
+
+        <div class="radio-group">
+          <input type="radio" name="radio" value="no">
+          <label for="radio">Not so sure</label>
+        </div>
+
+        <div class="radio-group">
+          <input type="radio" name="radio" value="maybe">
+          <label for="radio2">Maybe</label>
+        </div>
+
+        <div class="radio-group">
+          <input type="radio" name="radio" value="yes">
+          <label for="radio3">Hell yeah</label>
+        </div>
+      </div>
+
+      <div class="form-group1">
+        <p class="form-group1">What did you like the most about this survey form ?</p>
+
+        <div class="radio-group">
+          <input type="checkbox" name="checkbox" value="colors">
+          <label for="checkbox">Colors</label>
+        </div>
+
+        <div class="radio-group">
+          <input type="checkbox" name="checkbox" value="simplicity">
+          <label for="checkbox">Simplicity</label>
+        </div>
+
+        <div class="radio-group">
+          <input type="checkbox" name="checkbox" value="efficiency">
+          <label for="checkbox">Efficiency</label>
+        </div>
+
+        <div class="radio-group">
+          <input type="checkbox" name="checkbox" value="all the options">
+          <label for="checkbox">All the options</label>
+        </div>
+      </div>
+
+      <div class="form-group1">
+        <label for="text-area">How could this survey be better ?</label>
+        <textarea class="text-area" name="text-area" value="text-area" rows="3" cols="30" placeholder="Write your recommendations here.."></textarea>
+      </div>
+
+      <div class="form-group1">
+        <label for="submit"></label>
+        <input id="submit" class="inputs" type="submit" name="submit" value="submit">
+      </div>
+
+    </form>
+  </div>
+
+  <footer form-group1>
+    <p>Created by Azed - Web Development © 2021</p>
+    <p><em><a href="">Follow this link if you want to see my Portefolio</a></em></p>
+  </footer>
+
+</body>
+
+</html>
